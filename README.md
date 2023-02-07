@@ -55,18 +55,3 @@ trajetos, a nave deve ir até onde conseguir.
 
 **OBS.: Utilizem todos os valores como int** (valor dos recursos, valor por peso, posição, quantidade de combustível)
 
-# Exemplo de Teste
-
-```Java
-@Test
-public void deveFicarADerivaQuandoFaltarCombustivelParaIrAteUmPlaneta() {
-    int posicaoEsperada = 3;
-    Nave milleniumFalcon = new Nave(9);
-    Planeta tatooine = new Planeta(4, new ArrayList<>());
-
-    milleniumFalcon.explorar(tatooine);
-    int posicaoResultante = milleniumFalcon.getPosicao();
-
-    Assert.assertEquals(posicaoEsperada, posicaoResultante);
-}
-```
