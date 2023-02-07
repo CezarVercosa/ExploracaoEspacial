@@ -70,27 +70,3 @@ public void deveFicarADerivaQuandoFaltarCombustivelParaIrAteUmPlaneta() {
     Assert.assertEquals(posicaoEsperada, posicaoResultante);
 }
 ```
-
-### Bônus
-
-No método `explorar`, quando for passada uma lista de planetas, deve também haver uma "prioridade"
-em que a Nave irá explorar os planetas. Esta prioridade está ligada ao Planeta, pode ser a posição,
-o valor total de seus recursos ou o valor por peso dos mesmos. Nos exemplos acima a prioridade era a
-posição.
-
-Exemplo: Quero explorar esta lista de planetas com o prioridade de valor total, então minha
-nave deve começar pelo planeta com o maior valor total e terminar pelo menor.
-
-Me provem, através de testes, que a prioridade altera a quantidade de combustível restante no final
-da exploração. Se eu escolher a prioridade posição deve sobrar mais combustível do que se eu
-escolher quantidade de recursos.
-
-## Testes Obrigatórios
-
-* Devem existir **obrigatóriamente** na solução entregue testes unitários com os seguintes nomes:
-
-    - deveFicarADerivaQuandoFaltarCombustivelParaIrAteUmPlaneta
-    - deveTerValorTotalZeradoQuandoNaoExistirNenhumRecurso
-    - deveTerValorTotalQuandoExistirRecursosNoPlaneta
-    - deveTerValorPorPesoZeradoQuandoNaoExistirNenhumRecurso
-    - deveTerValorPorPesoQuandoExistirRecursosNoPlaneta
